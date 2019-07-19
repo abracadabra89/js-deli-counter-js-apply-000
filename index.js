@@ -17,7 +17,7 @@ function nowServing(katzDeli){
      return "The line is currently empty.";
    } else {
      let customerAndNumber = [];
-     for(let num = 1; num < arr.length; num++){
+     for(let i = 0; i < arr.length; i++){
      customerAndNumber.push(i + 1 + '. ' + arr[i])
      }
    return 'The line is currently: ' + arr.join(', ');
