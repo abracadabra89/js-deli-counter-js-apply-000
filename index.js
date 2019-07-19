@@ -20,7 +20,7 @@ function nowServing(katzDeli){
      for(let i = 0; i < arr.length; i++){
      customerAndNumber.push(i + 1 + '. ' + arr[i]);
      }
-   return 'The line is currently: ' + arr.join(', ');
+   return 'The line is currently: ' + customerAndNumber.join(', ');
  }
  }
  
