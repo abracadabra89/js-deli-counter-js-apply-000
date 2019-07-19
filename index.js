@@ -16,9 +16,22 @@ function nowServing(katzDeli){
    if(arr.length === 0){
      return "The line is currently empty.";
    } else {
+     let customerAndNumber = [];
      for(let num = 1; num < arr.length; num++){
-     arr = arr.join(num + ',');
+     customerAndNumber.push(i + 1 + '. ' + arr[i])
      }
-   return 'The line is currently: ' + arr;
+   return 'The line is currently: ' + arr.join(', ');
  }
  }
+ 
+ 
+ var currentLine = function (katzDeliLine) {
+//   if (katzDeliLine.length===0) {
+//   return "The line is currently empty.";
+// }
+//    var customerAndNumber = [];
+//    for (var i=0; i<katzDeliLine.length; i++) {
+//    customerAndNumber.push(i + 1 + ". " + katzDeliLine[i])
+// }
+//   return "The line is currently: " + customerAndNumber.join(", ");
+// }
